@@ -72,7 +72,7 @@ public class Intro extends AppCompatActivity {
         mSkip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(Intro.this,MainActivity.class);
+                Intent intent=new Intent(Intro.this,LoginActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -85,7 +85,7 @@ public class Intro extends AppCompatActivity {
                     viewPager.setCurrentItem(current);
                 }
                 else{
-                    Intent intent=new Intent(Intro.this,MainActivity.class);
+                    Intent intent=new Intent(Intro.this,LoginActivity.class);
                     startActivity(intent);
                     finish();
                 }
